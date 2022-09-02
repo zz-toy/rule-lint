@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"baseUrl": ".",
+		"strict": true,
+		"allowJs": true, // 允许导入js文件
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"removeComments": true,
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true, // 支持导入json文件
+		"jsx": "preserve",
+		"noLib": false,
+		"lib": ["dom", "esnext"],
+		"skipLibCheck": true,
+		"types": ["vite/client"], // 默认是@types目录
+		"paths": {
+			// import路径别名
+			"@/*": ["ts-src/*"]
+		},
+		"forceConsistentCasingInFileNames": true, // 文件名大小写敏感
+		"strictFunctionTypes": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"experimentalDecorators": true
+	},
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+	"exclude": ["node_modules", "tests/server/**/*.ts", "dist"]
+}
