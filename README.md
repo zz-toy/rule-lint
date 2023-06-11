@@ -2,7 +2,8 @@
 前端规范模板，存放各种lint
 
 [npm package](https://www.npmjs.com/)
-[husky npm](https://www.npmjs.com/package/husky)
+[husky](https://www.npmjs.com/package/husky)
+[lint-staged](https://www.npmjs.com/package/lint-staged)
 [Eslint](https://eslint.org/)
 [typescript-eslint](https://typescript-eslint.io/getting-started)
 
@@ -21,10 +22,12 @@ yarn add -D vue-eslint-parser vue
 
 yarn add -D husky
 
+yarn add -D lint-staged
+
 ```
+# eslint (校验代码)
 
-
-# husky
+# husky (提交代码前校验)
 - yarn add -D husky
 - package.json文件中添加
 ```shell
@@ -32,3 +35,5 @@ npm pkg set scripts.prepare="husky install"
 yarn prepare
 npx husky add .husky/pre-commit "自定义命令"
 ```
+
+# lint-staged（只校验修改的代码）
