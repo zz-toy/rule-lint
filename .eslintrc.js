@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: [ './lint/eslint/javascript' ],
+  extends: [ './src/eslint/javascript' ],
 };

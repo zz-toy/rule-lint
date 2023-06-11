@@ -2,7 +2,7 @@
     "extends": ["stylelint-config-standard-scss","stylelint-config-recess-order"],
     "overrides": [
     {
-      "files": ["**/*.less", "**/*.scss"],
+      "files": ["test/**/*.less", "test/**/*.scss"],
       "customSyntax": "postcss-scss"
     }
   ]
