@@ -1,0 +1,22 @@
+{
+  "editor.fontSize": 14,
+  "window.zoomLevel": 1,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": false,
+    "**/.idea": true,
+    "**/dist": true,
+    "**/.github": true
+  },
+  "prettier.enable": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+  // "eslint.format.enable": true,
+}
