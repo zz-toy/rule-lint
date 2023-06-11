@@ -3,6 +3,8 @@
 
 [npm package](https://www.npmjs.com/)
 [husky](https://www.npmjs.com/package/husky)
+[stylelint npm](https://www.npmjs.com/package/stylelint)
+[stylelint](https://stylelint.io/)
 [lint-staged](https://www.npmjs.com/package/lint-staged)
 [Eslint](https://eslint.org/)
 [typescript-eslint](https://typescript-eslint.io/getting-started)
@@ -14,7 +16,7 @@ yarn add -D editorconfig prettier
 ```shell
 yarn add -D eslint
 
-yarn add -D stylelint
+yarn add -D stylelint stylelint-config-standard-scss stylelint-config-recess-order
 
 yarn add -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
 
@@ -37,3 +39,5 @@ npx husky add .husky/pre-commit "自定义命令"
 ```
 
 # lint-staged（只校验修改的代码）
+
+# stylelint
