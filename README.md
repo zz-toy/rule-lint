@@ -16,21 +16,21 @@
 [typescript-eslint](https://typescript-eslint.io/getting-started)
 
 ```shell
-yarn add -D editorconfig prettier
+pnpm i -D editorconfig prettier
 ```
 
 ```shell
-yarn add -D eslint
+pnpm i -D eslint
 
-yarn add -D stylelint stylelint-config-standard-scss stylelint-config-recess-order
+pnpm i -D stylelint stylelint-config-standard-scss stylelint-config-recess-order
 
-yarn add -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
+pnpm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
 
-yarn add -D vue-eslint-parser vue
+pnpm i -D vue-eslint-parser vue
 
-yarn add -D husky
+pnpm i -D husky
 
-yarn add -D lint-staged
+pnpm i -D lint-staged
 
 ```
 # editorconfig
@@ -45,8 +45,8 @@ yarn add -D lint-staged
 - yarn add -D husky
 - package.json文件中添加
 ```shell
-npm pkg set scripts.prepare="husky install"
-yarn prepare
+pnpm pkg set scripts.prepare="husky install"
+pnpm prepare
 npx husky add .husky/pre-commit "自定义命令"
 ```
 
