@@ -40,10 +40,5 @@
     "scripts": {
         "prepare": "husky install",
         "lint": "eslint src --ext .js"
-    },
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
     }
 }
