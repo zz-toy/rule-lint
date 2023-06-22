@@ -12,7 +12,13 @@
         "publish": false
     },
     "hooks": {
-        "after:bump": "echo 更新版本成功"
+        "before:init": [
+            "echo before:init"
+        ],
+        "after:my-plugin:bump": "echo after:my-plugin:bump",
+        "after:bump": "echo 更新版本成功",
+        "after:git:release": "echo after:git:release",
+        "after:release": "echo after:release"
     },
     "plugins": {
         "@release-it/conventional-changelog": {
@@ -28,30 +34,6 @@
                     {
                         "type": "fix",
                         "section": "Bug Fixes"
-                    },
-                    {
-                        "type": "chore",
-                        "hidden": true
-                    },
-                    {
-                        "type": "docs",
-                        "hidden": true
-                    },
-                    {
-                        "type": "style",
-                        "hidden": true
-                    },
-                    {
-                        "type": "refactor",
-                        "hidden": true
-                    },
-                    {
-                        "type": "perf",
-                        "hidden": true
-                    },
-                    {
-                        "type": "test",
-                        "hidden": true
                     }
                 ]
             }

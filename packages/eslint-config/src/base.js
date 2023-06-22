@@ -10,6 +10,8 @@ module.exports = {
     commonjs: true,
   },
   rules: {
+    // 强制数组方法的回调函数中有 return 语句
+    'array-callback-return': [ 'error' ],
     // require `super()` calls in constructors
     'constructor-super': [ 'error' ],
     // 强制 “for” 循环中更新子句的计数器朝着正确的方向移动
@@ -122,8 +124,6 @@ module.exports = {
     'no-this-before-super': [ 'error' ],
     // 不允许在不允许使用 `undefined` 值的上下文中使用可选链接
     'no-unsafe-optional-chaining': [ 'error' ],
-
-
     // 禁止带有仅允许一次迭代的主体的循环
     'no-unreachable-loop': [ 'error' ],
     // disallow duplicate module imports
@@ -140,8 +140,6 @@ module.exports = {
     'no-template-curly-in-string': [ 'error' ],
     // 强制 getter 和 setter 在对象中成对出现
     'accessor-pairs': [ 'error' ],
-    // 强制数组方法的回调函数中有 return 语句
-    'array-callback-return': [ 'error' ],
     // 强制把变量的使用限制在其定义的作用域范围内
     'block-scoped-var': [ 'error' ],
     // 强制类方法使用 this
@@ -462,7 +460,7 @@ module.exports = {
     // 强制使用一致的反勾号、双引号或单引号
     quotes: [ 'error', 'single' ],
     // 要求或禁止使用分号代替 ASI
-    semi: [ 'error', 'always' ],
+    semi: [ 'error', 'never' ],
     // 强制分号之前和之后使用一致的空格
     'semi-spacing': [ 'error' ],
     // 强制分号的位置
@@ -544,4 +542,4 @@ module.exports = {
     // 强制在 yield* 表达式中 * 周围使用空格
     'yield-star-spacing': [ 'error' ],
   },
-};
+}

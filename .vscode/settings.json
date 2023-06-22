@@ -4,21 +4,22 @@
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true,
-        "**/node_modules": false,
+        "**/node_modules": true,
         "**/.idea": true,
         "**/dist": true,
         "**/.github": true
     },
     "prettier.enable": false,
+    "tslint.enable": false,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.codeActionsOnSave": {
-        "source.fixAll.stylelint": true,
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
     },
     "eslint.validate": [
-        "javascript",
-        "javascriptreact",
+        // "javascript",
+        // "javascriptreact",
         "typescript",
         "typescriptreact"
     ],

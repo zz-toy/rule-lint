@@ -1,4 +1,5 @@
 module.exports = {
+  extends: [ './base', 'plugin:@typescript-eslint/recommended', 'plugin:vue/vue3-recommended' ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -7,7 +8,6 @@ module.exports = {
       jsx: true,
     },
   },
-  extends: [ './basic', 'plugin:@typescript-eslint/recommended', 'plugin:vue/vue3-recommended' ],
   overrides: [
     {
       files: [ '*.vue' ],
@@ -24,4 +24,4 @@ module.exports = {
     indent: 'off',
     '@typescript-eslint/indent': [ 'error', 2 ],
   },
-};
+}
